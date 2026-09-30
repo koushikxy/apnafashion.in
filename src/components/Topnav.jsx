@@ -1,25 +1,42 @@
 import React from 'react'
 
-import { Swiper, SwiperSlide } from 'swiper/react';
-import {Autoplay } from 'swiper';
-import 'swiper/css';
-import 'swiper/css/autoplay';
-
 const Topnav = () => {
   return (
-    <>
-      <div className=' p-3 text-white text-center bg-black tracking-[3px] font-semibold text-sm'>
-        <Swiper className=''
-          modules={[Autoplay]}
-          autoplay={{ delay: 4000 }}
-        >
-          <SwiperSlide className='bg-black'>SHOP FOR RS 999/- & GET EXTRA 10% OFF</SwiperSlide>
-          <SwiperSlide className='bg-black'>SHOP FOR RS 1999/- & GET EXTRA 15% OFF</SwiperSlide>
-          <SwiperSlide className='bg-black'>SHOP FOR RS 2999/- & GET EXTRA 20% OFF</SwiperSlide>
-          <SwiperSlide className='bg-black'>SHOP FOR RS 3999/- & GET EXTRA 30% OFF</SwiperSlide>
-        </Swiper>
+    <div className="bg-black text-white overflow-hidden border-b border-gray-800 flex justify-between items-center h-10">
+      <div className="flex-1 overflow-hidden flex whitespace-nowrap">
+          <div className="animate-marquee flex items-center text-xs font-bold tracking-[0.2em] uppercase shrink-0">
+            <span className="mx-8">🔥 FLASHSALE IS LIVE</span>
+            <span className="mx-8">|</span>
+            <span className="mx-8">EXTRA 20% OFF ON PREPAID ORDERS</span>
+            <span className="mx-8">|</span>
+            <span className="mx-8">FREE SHIPPING OVER ₹999</span>
+            <span className="mx-8">|</span>
+            <span className="mx-8">🔥 FLASHSALE IS LIVE</span>
+            <span className="mx-8">|</span>
+            <span className="mx-8">EXTRA 20% OFF ON PREPAID ORDERS</span>
+            <span className="mx-8">|</span>
+            <span className="mx-8">FREE SHIPPING OVER ₹999</span>
+            <span className="mx-8">|</span>
+          </div>
+          <div className="animate-marquee flex items-center text-xs font-bold tracking-[0.2em] uppercase shrink-0">
+            <span className="mx-8">🔥 FLASHSALE IS LIVE</span>
+            <span className="mx-8">|</span>
+            <span className="mx-8">EXTRA 20% OFF ON PREPAID ORDERS</span>
+            <span className="mx-8">|</span>
+            <span className="mx-8">FREE SHIPPING OVER ₹999</span>
+            <span className="mx-8">|</span>
+            <span className="mx-8">🔥 FLASHSALE IS LIVE</span>
+            <span className="mx-8">|</span>
+            <span className="mx-8">EXTRA 20% OFF ON PREPAID ORDERS</span>
+            <span className="mx-8">|</span>
+            <span className="mx-8">FREE SHIPPING OVER ₹999</span>
+            <span className="mx-8">|</span>
+          </div>
       </div>
-    </>
+      <div className="hidden md:flex items-center bg-black px-6 h-full border-l border-gray-800 z-10 shrink-0">
+        <span className="text-[10px] font-black tracking-widest uppercase cursor-pointer hover:text-red-500 transition-colors">EN / ₹ INR</span>
+      </div>
+    </div>
   )
 }
 

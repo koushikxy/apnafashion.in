@@ -1,7 +1,4 @@
 import React from 'react'
-import Topnav from '../components/Topnav'
-import Navbar from '../components/Navbar'
-import Bottomnav from '../components/Bottomnav'
 import Headerslider from '../components/Headerslider'
 import Categorysec1 from '../components/Categorysec1'
 import Maincategory from '../components/Maincategory'
@@ -12,9 +9,6 @@ import Quotes from '../components/Quotes'
 const Home = () => {
     return (
         <>
-        <Topnav />
-        <Navbar/>
-        <Bottomnav/>
         <Headerslider/>
         <Categorysec1/>
         <Maincategory/>
